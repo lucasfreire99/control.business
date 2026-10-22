@@ -1,0 +1,61 @@
+<!doctype html>
+<html lang="pt-BR">
+<head>
+  <meta charset="utf-8">
+  <meta name="viewport" content="width=device-width, initial-scale=1">
+  <title>Controle de Documentação</title>
+  <link rel="icon" href="img/favicon.svg" type="image/svg+xml">
+  <link rel="icon" href="img/favicon.ico" sizes="48x48">
+  <link rel="icon" href="img/favicon-32.png" type="image/png" sizes="32x32">
+  <link rel="apple-touch-icon" href="img/apple-touch-icon.png">
+  <meta name="theme-color" content="#2E75B6">
+  <link rel="manifest" href="manifest.webmanifest">
+  <meta name="mobile-web-app-capable" content="yes">
+  <meta name="apple-mobile-web-app-capable" content="yes">
+  <meta name="apple-mobile-web-app-title" content="Documentação">
+  <meta name="apple-mobile-web-app-status-bar-style" content="default">
+  <link rel="stylesheet" href="css/style.css?v=6">
+</head>
+<body>
+  <a class="skip" href="#view">Ir para o conteúdo</a>
+  <div id="auth" class="auth" hidden></div>
+  <div class="app">
+    <aside class="side">
+      <div class="brand">
+        <strong>Controle de Documentação</strong>
+        <span id="orgName">Empresas</span>
+      </div>
+      <nav id="nav" aria-label="Principal">
+        <a href="#/painel" data-r="painel">Painel</a>
+        <a href="#/empresas" data-r="empresas">Empresas</a>
+        <a href="#/conferencia" data-r="conferencia">Conferência</a>
+        <a href="#/ficha" data-r="ficha">Ficha</a>
+        <a href="#/matriz" data-r="matriz">Matriz anual</a>
+        <a href="#/relatorios" data-r="relatorios">Relatórios</a>
+        <a href="#/cobranca" data-r="cobranca">Cobrança</a>
+        <a href="#/equipe" data-r="equipe" hidden>Equipe</a>
+        <a href="#/config" data-r="config">Configurações</a>
+      </nav>
+      <div id="cloudBox" class="cloud-box" hidden></div>
+      <button type="button" class="theme-btn" id="installBtn" hidden>Instalar app</button>
+      <button type="button" class="theme-btn" id="themeBtn" aria-label="Alternar tema claro e escuro">Tema</button>
+    </aside>
+    <main class="main">
+      <div id="banner" class="banner" hidden>O navegador bloqueou o armazenamento local. Os dados valem só enquanto esta aba estiver aberta. Use Configurações para exportar um backup.</div>
+      <div id="view" tabindex="-1"></div>
+    </main>
+  </div>
+
+  <script src="js/config.js?v=6"></script>
+  <script src="js/vendor/exceljs.min.js?v=6"></script>
+  <script src="js/vendor/supabase.js?v=6"></script>
+  <script src="js/merge.js?v=6"></script>
+  <script src="js/store.js?v=6"></script>
+  <script src="js/ui.js?v=6"></script>
+  <script src="js/export.js?v=6"></script>
+  <script src="js/pages.js?v=6"></script>
+  <script src="js/cloud.js?v=6"></script>
+  <script src="js/app.js?v=6"></script>
+  <script src="js/pwa.js?v=6"></script>
+</body>
+</html>
